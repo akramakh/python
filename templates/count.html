@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>count</title>
+  </head>
+  <body>
+    <center><h1>Count</h1> <h2> <a href="{% url 'home' %}"> Start again</a> </h2></center>
+    <center><p>{{ text }} <span> ({{ count }}) words</span></p></center>
+    <center>
+      {% for word, counttotal in worddictionaty %}
+      {{ word }} ({{ counttotal }}) <br>
+      {% endfor %}
+    </center>
+  </body>
+</html>

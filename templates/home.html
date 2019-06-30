@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+
+    <center>
+      <h1>Home page</h1>
+      <a href="{% url 'about' %}">ABOUT</a>
+    </center>
+    <center>
+      <form class="" action="{% url 'count' %}">
+        <textarea name="text" rows="10" cols="60"></textarea><br>
+        <input type="submit" name="count" value="Count">
+      </form>
+    </center>
+
+  </body>
+</html>
